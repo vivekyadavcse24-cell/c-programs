@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main();{
+float basic,hra,da,gross;
+printf("entre the basic salary:");
+scanf("%f",&basic);
+printf("entre the hra:");
+scanf("%f",&hra);
+printf("entre the da:");
+scanf("%f",&da);
+gross=basic+hra+da;
+printf("the gross salary is:%f\n",gross);
+return 0;
+}
