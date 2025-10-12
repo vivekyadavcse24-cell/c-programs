@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main();
+{   int radius;
+  const float pi=3.14,area,circum;
+printf("entre the radius of cicle:");
+scanf("%d",&radius);
+area=pi*radius*radius;
+printf("the area of circle is :%f",area);
+circum=2*pi*radius;
+print("\n the circumference of circle is :%f",circumference);
+return 0;
+}
+
