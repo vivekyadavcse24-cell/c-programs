@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+char fname[20],mname[20],lname[20];
+printf("entre first name:");
+scanf("%s",fname);
+printf("entre middle name:");
+scanf("%s",mname);
+printf("entre last name:");
+scanf("%s",lname);
+printf("abbreviated name:%c.%c.%s\n",fname[0],mname[0],lname);
+return 0;
+}
