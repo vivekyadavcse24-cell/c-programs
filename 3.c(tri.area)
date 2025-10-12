@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+  int b,h,area;
+printf("entre the base and hight of traingle:");
+scanf("%i%i",&b,&h);
+area=(b*h)*1/2;
+printf("area of triangle is:%i",area);
+  return 0;
+  }
