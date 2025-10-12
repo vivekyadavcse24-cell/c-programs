@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    float s1,s2,s3,s4,s5,per;
+    printf("entre the marks obtain in s1 out of 100:");
+    scanf("%f",&s1);
+    printf("entre the marks obtain in s2 out of 100:");
+    scanf("%f",&s2);
+    printf("entre the marks obtain in s3 out of 100:");
+    scanf("%f",&s3);
+    printf("entre the marks obtain in s4 out of 100:");
+    scanf("%f",&s4);
+    printf("entre the marks obtain in s5 out of 100:");
+    scanf("%f",&s5);
+    per=((s1+s2+s3+s4+s5)/100)*100;
+    printf("the percentage of 5 subject is:%f",per);
+    return 0;
+}
