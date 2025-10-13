@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,c;
+printf("entre the three numbers:");
+scanf("%d\n%d\n%d",&a,&b,&c);
+if(a>b)
+  printf("a is the grater one");
+else if(b>c)
+  printf("b is greater one");
+else 
+  printf("c is grater one ")
+    return 0;
+}
