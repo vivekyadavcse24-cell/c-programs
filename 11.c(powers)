@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+  int base,exp;
+long double result=1.0;
+printf("enter a base number:");
+scanf("%i",&base);
+printf("enter an exponent:");
+scanf("%i",&exp);
+while(exp!=0)
+{
+result*=base;
+--exp;
+}
+printf("answer=%Lf",result);
+return 0;
+}
