@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,gcd;
+printf("entre two number:");
+scanf("%d%d",&a,&b);
+  for(gcd=(a<b?a:b);gcd>=1;gcd--){
+  if(a%gcd==0&&b%gcd==0){
+  break;
+  }
+  }
+printf("GCD=%d\n",gcd);
+  return 0;
+  }
