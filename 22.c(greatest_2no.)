@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+  int a,b;
+printf("enter the number a,b:");
+scanf("%d\n%d",&a,&b);
+if(a>b)
+  printf("a is grater");
+else 
+printf("b is grater");
+return 0:
+}
