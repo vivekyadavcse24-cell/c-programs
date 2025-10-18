@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,c;
+printf("entre the 3 numbers a,b,c:");
+scanf("%d\n%d\n%d",&a,&b,&c);
+if(a>b)
+  printf("a is greater ");
+else if(b>c)
+    printf("b is greater ");
+else if(c>a)
+    printf("c is greater ");
+else
+  printF("invalid input");
+return 0;
+}
