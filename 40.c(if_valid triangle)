@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+  int angle1, angle2, angle3;
+printf("enter the angles:");
+scanf("%d\n%d\n%d",&angle1,&angle2,&angle3);
+if(angle1+angle2+angle3==180)
+  printf("triange is vaild");
+  else
+  printf("triangle is not valid");
+return 0;
+}
