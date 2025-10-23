@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+
+    int n,m,sum=0,r;
+    printf("enter the no:");
+    scanf("%d",&n);
+    m=n;
+    while(m>0)
+    {
+        r=m%10;
+        sum=sum+(r*r*r);
+        m=m/10;
+    }
+    if(sum==n)
+        printf("it is armstrong no");
+    else
+                printf("it is not armstrong no");
+
+}
