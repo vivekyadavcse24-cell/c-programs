@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+  int n,a=0,b=1,next,count=0;
+printf("enter the number of fibonacci terms:");
+scanf("%d",&n);
+printf("fibonacci series:");
+while(count<n)
+{
+printf("%d",a);
+next=a+b;
+a=b;
+b=next;
+count++;
+}
+return 0;
+}
