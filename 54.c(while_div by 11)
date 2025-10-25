@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  long long n,t;
+int s1=0,s2=0,p=1;
+printf("enter the no:");
+scanf("%lld",&n);
+t=llabs(n);
+while(t>0)
+{
+if(p%2)s1+=t%10;
+else s2+=t%10;
+p++;
+}
+if(llabs(s1-s2)%11==0)
+  printf("Divisible by 11");
+else
+  printf("not divisible by 11");
+return 0;
+}
