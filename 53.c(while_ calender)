@@ -1,0 +1,26 @@
+#include<stdio.h)
+int main()
+{
+  int days,start,day=1;
+printf("enter number of days in month:");
+scanf("%d",&days);
+printf("enter starting day (1=sun,2=mon,....7=sat):");
+scanf("%d",&start);
+printf("\n sun mon tue wed thu fri sat\n");
+int i=1;
+while(i<start)
+{
+printf(" ");
+i++;
+}
+while(day<=days)
+{
+printf("%5d",day);
+if((i%7)==0)
+  printf("\n");
+days++;
+i++;
+}
+printf("\n");
+return 0;
+}
