@@ -18,7 +18,7 @@ while(day<=days)
 printf("%5d",day);
 if((i%7)==0)
   printf("\n");
-days++;
+day++;
 i++;
 }
 printf("\n");
