@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+  int amt , note;
+printf("enter amount:");
+scanf("%d",&amt);
+note=2000;
+while(note>=1)
+{
+if(amt>=note)
+{
+printf("%dx%d=%d\n",note,amt/note,note*(amt/note));
+amt%=note;
+}
+if(note==2000)note=500;
+else if(note==500)note=200;
+else if(note==200)note=200;
+else if(note==100)note=200;
+else if(note==50)note=200;
+else if(note==20)note=200;
+else if(note==10)note=5;
+else if(note==5)note=2;
+else if(note==2)note=1;
+else break;
+}
+return 0;
+}
