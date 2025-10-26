@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+  int n,m,sum=0,r;
+printf("enter the no:");
+scanf("%d",&n);
+m=n;
+do{
+r=n%10;
+sum=sum+(r*r*r);
+n=n/10;
+}
+  while(n!=0);
+  {
+if(sum==m)
+  printf("it is an armstronhg no.");
+else 
+  printf("it is not an armstronhg no.");
+  }
+return 0;
+  }
