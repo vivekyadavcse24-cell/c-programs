@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int amount;
+    cout << "Enter the amount: ";
+    cin >> amount;
+
+    int denominations[] = {2000, 500, 200, 100, 50, 20, 10, 5, 2, 1};
+    int i = 0;
+
+    cout << "Denominations:\n";
+
+    do {
+        if (amount >= denominations[i]) {
+            int count = amount / denominations[i];
+            amount = amount % denominations[i];
+            cout << denominations[i] << " x " << count << endl;
+        }
+        i++;
+    } while(amount>0&&i<10);
+return 0;
+}
