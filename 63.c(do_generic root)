@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+  int n,sum;
+printf("enter a number:");
+scanf("%d",&n);
+do
+{
+sum=0;
+do{
+sum=sum+n%10;
+n=n/10;
+}
+  while(n!=0);
+  n=sum;
+}
+  while(sum>9);
+printf("generic root=%d",sum);
+return 0;
+}
