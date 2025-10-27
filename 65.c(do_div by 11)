@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+// Function to check divisibility by 11 using Vedic alternate sum rule
+bool isDivisibleBy11(int num) {
+    int sum = 0;
+    bool add = true;
+    while (num > 0) {
+        int digit = num % 10;
+        sum += add ? digit : -digit;
+        add = !add;
+        num /= 10;
+    }
+    return (sum % 11 == 0);
+}
+
+int main() {
+    int i = 1;
+    do {
+        if (isDivisibleBy11(i)) {
+            cout << i << " ";
+        }
+i++;
+    }
+      while(i<=100);
+return 0;
+}
+
+        
